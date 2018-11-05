@@ -6,3 +6,13 @@ function changeArr(arr){
 
 changeArr(concept);
 
+console.log(concept);
+
+function removeElement(newArr){
+     newArr.pop();
+}
+
+removeElement(concept);
+
+console.log(concept);
+
