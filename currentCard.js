@@ -4,3 +4,4 @@ const cards = ['diamond', 'spade', 'heart', 'club'];
 
 let currentCard = [ ];
 
+while (currentCard = cards[Math.floor(Math.random() * 4)];)
