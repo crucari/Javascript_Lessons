@@ -7,7 +7,7 @@ console.log(words.some((word) => {
 }));
 
 // Use filter to create a new array
-
+const interestingWords =
 
 
 // Make sure to uncomment the code below and fix the incorrect code before running it
