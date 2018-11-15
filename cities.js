@@ -8,3 +8,15 @@ cities.method(city => console.log('Have you visited ' + city + '?'));
 // Choose a method that will return a new array
 const longCities = cities.method(city => city.length > 7);
 
+// Choose a method that will return a single value
+const word = cities.method((acc, currVal) => {
+  return acc + currVal[0]
+}, "C");
+
+console.log(word)
+
+// Choose a method that will return a new array
+const smallerNums = nums.method(num => num - 5);
+
+// Choose a method that will return a boolean value
+nums.method(num => num < 0);
