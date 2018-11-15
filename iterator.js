@@ -1,13 +1,17 @@
 const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
 
-// Something is missing in the method call below -->fixed, added the needed parameter
+// Something is missing in the method call below
 
 console.log(words.some((word) => {
   return word.length < 6;
 }));
 
 // Use filter to create a new array
-const interestingWords =
+console.log(words.filter((word) => {
+  return word.length < 6;
+}));
+
+
 
 
 // Make sure to uncomment the code below and fix the incorrect code before running it
