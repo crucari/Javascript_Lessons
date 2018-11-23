@@ -6,4 +6,4 @@ const robot = {
   }
 };
 
-console.log(robot.provideInfo());
+console.log(robot.provideInfo()); //provide info
