@@ -24,3 +24,26 @@ const renderResponse = (res) => {
   responseField.innerHTML = `<p>You might be interested in:</p><ol>${wordList}</ol>`
   return
 }
+
+
+// Renders response before it is modified
+const renderRawResponse = (res) => {
+  // taking the first 10 words from res
+  let trimmedResponse = res.slice(0, 10)
+  //manipulates responseField to render the unformatted response
+  responseField.innerHTML = `<text>${JSON.stringify(trimmedResponse)}</text>`
+}
+
+// Renders the JSON that was returned when the Promise from fetch resolves.
+const renderJsonResponse = (res) => {
+  // creating an empty object to store the JSON in key-value pairs
+  let rawJson = {}
+  for(let key in response){
+    rawJson[key] = response[key]
+  }
+  // converting JSON into a string and adding line breaks to make it easier to read
+  rawJson = JSON.stringify(rawJson).replace(/,/g, ", \n")
+  // manipulates responseField to show the returned JSON.
+  responseField.innerHTML = `<pre>${rawJson}</pre>`
+}
+
