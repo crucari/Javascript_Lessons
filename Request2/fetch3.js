@@ -28,7 +28,7 @@ const displaySuggestions = (event) => {
   while(responseField.firstChild){
     responseField.removeChild(responseField.firstChild);
   }
-  getSuggestions();
+  getSuggestions();//method, get suggestions
 };
 
 submit.addEventListener('click', displaySuggestions);
