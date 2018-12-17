@@ -20,3 +20,4 @@ const displaySuggestions = (event) => {
 };
 
 submit.addEventListener('click', displaySuggestions);
+//event listener
